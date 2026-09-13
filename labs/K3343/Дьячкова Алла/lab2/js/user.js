@@ -182,7 +182,7 @@ function fillRentalHistory() {
                         Статус: ${rental.isApproved ? "Одобрено" : "В ожидании"}</p>
                         <p class="card-text">Дата начала аренды: ${rental.startOfRent}</p>
                         <p class="card-text">Дата окончания аренды: ${rental.endOfRent}</p>
-                        <button class="btn btn-primary" onclick="location.href='messages.html?property_id=${rental.propertyId}'">Перейти к чату</button>
+                        <button class="btn btn-primary" onclick="location.href='messages.html?propertyId=${rental.propertyId}'">Перейти к чату</button>
                         <button class="btn btn-danger delete-booking" data-id="${rental.id}">Удалить бронь</button>
                     </div>
                 `;
