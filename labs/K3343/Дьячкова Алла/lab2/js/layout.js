@@ -29,7 +29,7 @@ function checkUserStatus() {
     if (logoutButton) {
         logoutButton.addEventListener('click', function () {
             localStorage.removeItem('loggedInUserId');
-            window.location.href = 'enter.html';
+            window.location.href = 'login.html';
         });
     }
 }
