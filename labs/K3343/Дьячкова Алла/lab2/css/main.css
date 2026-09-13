@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     display: flex;
@@ -6,36 +7,29 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-.header{
+.header {
     background-color: #f8f9fa;
     width: 100%;
 }
 
 .footer {
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: #f8f9fa;
     text-align: center;
     padding: 1rem;
     width: 100%;
 }
 
-.btn-secondary {
+.btn-custom-secondary {
     background-color: white;
     color: #6c757d;
     border: 1px solid #6c757d;
     transition: background-color 0.3s, color 0.3s;
-}
-.btn-secondary:hover {
-    background-color: #e0e0e0;
-    color: #6c757d;
 }
 
-.btn-warning{
-    background-color: white;
+.btn-custom-secondary:hover {
+    background-color: #e0e0e0;
     color: #6c757d;
-    border: 1px solid #6c757d;
-    transition: background-color 0.3s, color 0.3s;
-    margin: 5px;
 }
 
 .btn-block {
@@ -58,9 +52,12 @@ html, body {
 h1 {
     color: #333;
 }
+
 .card {
     margin-bottom: 20px;
+    border: 1px soild transparent;
 }
+
 .btn-primary {
     background-color: #007bff;
     border: none;
@@ -112,8 +109,72 @@ h1 {
     max-width: 600px;
 }
 
+#messageList {
+    max-height: 400px;
+    overflow-y: auto;
+    row-gap: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+}
+
+.message-sent {
+    position: relative;
+    top: 1px;
+    will-change: transform;
+    width: max-content;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 75%;
+    box-sizing: border-box;
+    background-color: #d1e7ff;
+    text-align: flex-end;
+    align-self: flex-end;
+    outline: 1px solid #6b9ed2;
+    outline-offset: -1px;
+    border: 1px transparent;
+    border-radius: 5px;
+}
+
+.message-received {
+    position: relative;
+    top: 1px;
+    will-change: transform;
+    width: max-content;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 75%;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    text-align: flex-start;
+    align-self: flex-start;
+    outline: 1px solid #bab898;
+    outline-offset: -1px;
+    border: 1px transparent;
+    border-radius: 5px;
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        max-width: 100%;
+        width: 100%;
+        position: static;
+        top: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .results-container {
+        margin-top: 0;
+    }
+
+    .modal-dialog {
+        max-width: 95vw;
+        margin: 0.5rem auto;
+    }
+}
+
 .results-container {
-    margin-top: 20px;
+    margin-bottom: 20px;
     height: 100%;
 }
 
@@ -131,87 +192,14 @@ h1 {
     background-color: #f0f0f0;
 }
 
-.message-content {
-    margin: 0;
+#searchRegion {
+    margin-top: -16px;
+    padding-top: 0;
 }
 
-.message-time {
-    text-align: right;
-    font-size: 0.8em;
-    margin-top: 5px;
-}
-
-#propertyLink a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-}
-
-.property-title {
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.property-link {
-    text-decoration: none;
-    color: #007bff;
-}
-
-.property-link:hover {
-    text-decoration: underline;
-}
-
-.messages-container::-webkit-scrollbar {
-    width: 8px;
-}
-
-.messages-container::-webkit-scrollbar-thumb {
-    background-color: #007bff;
-    border-radius: 10px;
-}
-
-.messages-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem; /* Space between messages */
-    max-height: calc(100vh - 300px); /* Adjust to fit the screen dynamically */
-    overflow-y: auto; /* Add scrolling for long messages */
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-
-.message-bubble {
-    max-width: 70%;
-    padding: 0.75rem;
-    border-radius: 12px;
-    line-height: 1.4;
-    word-wrap: break-word;
-}
-
-.message-bubble.sent {
-    align-self: flex-end;
-    background-color: #007bff;
-    color: #fff;
-}
-
-.message-bubble.received {
-    align-self: flex-start;
-    background-color: #f1f1f1;
-    color: #000;
-}
-
-.btn-primary.new {
-    color: #f1f1f1;
-    word-wrap: break-word;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
-
-.btn-primary.new:not(:last-child) {
-    margin-bottom: 6px;
+#rentalHistoryCard {
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 1px;
 }
