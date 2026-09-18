@@ -50,7 +50,11 @@ body.dark-mode #changePasswordModal .modal-header {
 }
 
 header#header.header,
-footer#footer.footer {
+footer#footer.footer header#header.header,
+footer#footer.footer,
+div#footer.footer,
+div#header.header,
+.p-3 {
     background-color: #f8f9fa;
     width: 100%;
 }
