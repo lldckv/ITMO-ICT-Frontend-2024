@@ -3,6 +3,7 @@ fetch('components/header.html')
     .then(data => {
         document.getElementById('header').innerHTML = data;
         checkUserStatus();
+        initThemeToggle();
     });
 
 fetch('components/footer.html')
@@ -32,4 +33,27 @@ function checkUserStatus() {
             window.location.href = 'login.html';
         });
     }
+}
+
+function initThemeToggle() {
+    const toggleBtn = document.getElementById('toggle-mode');
+    if (!toggleBtn) return;
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        toggleBtn.textContent = '☀️';
+        toggleBtn.setAttribute('aria-label', 'Переключить на светлую тему');
+    } else {
+        toggleBtn.textContent = '🌙';
+        toggleBtn.setAttribute('aria-label', 'Переключить на тёмную тему');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        const isDark = document.body.classList.toggle('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+        toggleBtn.textContent = isDark ? '☀️' : '🌙';
+        toggleBtn.setAttribute('aria-label', isDark ? 'Переключить на светлую тему' : 'Переключить на тёмную тему');
+    });
 }

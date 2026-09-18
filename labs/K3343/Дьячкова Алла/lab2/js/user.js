@@ -177,7 +177,7 @@ function fillRentalHistory() {
                 rentalCard.style.flex = "0 0 auto";
                 rentalCard.innerHTML = `
                     <div class="card-body">
-                        <h5 class="card-title"><a href="property.html?id=${rental.propertyId}">${property.title}</a></h5>
+                        <h3 class="card-title"><a href="property.html?id=${rental.propertyId}">${property.title}</a></h3>
                         <p class="card-text" style="color: ${rental.isApproved ? 'green' : 'red'};">
                         Статус: ${rental.isApproved ? "Одобрено" : "В ожидании"}</p>
                         <p class="card-text">Дата начала аренды: ${rental.startOfRent}</p>
@@ -239,7 +239,7 @@ function fillUserDialogs() {
                     const button = document.createElement("button");
                     button.className = "btn btn-primary new";
                     button.textContent = `Чат: ${property.title}`;
-                    button.onclick = () => location.href = `messages.html?property_id=${propertyId}`;
+                    button.onclick = () => location.href = `messages.html?propertyId=${propertyId}`;
                     container.appendChild(button);
                 }
             });

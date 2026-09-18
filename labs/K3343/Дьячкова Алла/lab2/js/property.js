@@ -118,8 +118,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             bootstrap.Modal.getInstance(loginModalEl)?.hide();
 
             if (pendingAction === 'booking') {
-                // Reopen booking modal so the user can finish where they left off —
-                // input values are still intact since the modal was never destroyed.
                 new bootstrap.Modal(document.getElementById('bookingModal')).show();
             } else {
                 window.location.href = `messages.html?propertyId=${propertyId}`;
