@@ -1,0 +1,160 @@
+{
+  "users": [
+    {
+      "email": "wef1rewf3r@gmc.pd",
+      "password": "$2a$10$nU.GCVJe0CEpYNMtNMk4j.K0oc5ge54bjhAiE/r7XrjXgS4SHgQDm",
+      "firstName": "qerw",
+      "lastName": "qer2er",
+      "phone": "1122334455",
+      "dob": "2006-09-06",
+      "rentalHistory": [
+        {
+          "id": 3,
+          "propertyId": 1,
+          "isApproved": false,
+          "creationDate": "2026-09-13T17:56:37.660Z",
+          "startOfRent": "2026-09-16",
+          "endOfRent": "2026-09-24"
+        },
+        {
+          "id": 4,
+          "propertyId": 1,
+          "isApproved": false,
+          "creationDate": "2026-09-13T17:57:23.845Z",
+          "startOfRent": "2026-09-11",
+          "endOfRent": "2026-09-26"
+        },
+        {
+          "id": 5,
+          "propertyId": 1,
+          "isApproved": false,
+          "creationDate": "2026-09-13T17:58:00.094Z",
+          "startOfRent": "2026-09-03",
+          "endOfRent": "2026-09-04"
+        },
+        {
+          "id": 6,
+          "propertyId": 1,
+          "isApproved": false,
+          "creationDate": "2026-09-13T21:32:44.892Z",
+          "startOfRent": "2026-09-13",
+          "endOfRent": "2026-09-29"
+        }
+      ],
+      "messages": [
+        {
+          "id": 1,
+          "sender": 1,
+          "propertyId": 2,
+          "content": "Здравствуйте!",
+          "timestamp": "2024-11-01T13:00:00Z"
+        },
+        {
+          "id": 2,
+          "sender": 0,
+          "propertyId": 2,
+          "content": "Здравствуйте! Подтвердить аренду могу позже",
+          "timestamp": "2024-11-01T13:20:00Z"
+        },
+        {
+          "propertyId": "2",
+          "content": "l",
+          "timestamp": "2026-09-12T19:52:29.587Z",
+          "sender": 1
+        },
+        {
+          "propertyId": "2",
+          "content": "mkl;mlml;;l",
+          "timestamp": "2026-09-12T19:52:31.871Z",
+          "sender": 1
+        },
+        {
+          "propertyId": "2",
+          "content": "om;l,p[lmk mkllplmkm klp;k",
+          "timestamp": "2026-09-12T19:52:35.509Z",
+          "sender": 1
+        },
+        {
+          "propertyId": "2",
+          "content": "klkklklkllk",
+          "timestamp": "2026-09-12T19:52:38.820Z",
+          "sender": 1
+        },
+        {
+          "propertyId": "2",
+          "content": "wesrdtujik",
+          "timestamp": "2026-09-12T19:52:42.141Z",
+          "sender": 1
+        },
+        {
+          "propertyId": "2",
+          "content": "kmm",
+          "timestamp": "2026-09-12T20:17:11.416Z",
+          "sender": 1
+        },
+        {
+          "propertyId": "2",
+          "content": "qawesrdytfyguhij9876543212345678909876321234567890-098654321234567890987654321234567",
+          "timestamp": "2026-09-12T20:23:56.618Z",
+          "sender": 1
+        },
+        {
+          "propertyId": "2",
+          "content": "qawesrdytfyguhij9876543212345678909876321234567890-098654321234567890987654321234567qawesrdytfyguhij9876543212345678909876321234567890-098654321234567890987654321234567qawesrdytfyguhij9876543212345678909876321234567890-098654321234567890987654321234567qawesrdytfyguhij9876543212345678909876321234567890-098654321234567890987654321234567qawesrdytfyguhij9876543212345678909876321234567890-098654321234567890987654321234567qawesrdytfyguhij9876543212345678909876321234567890-098654321234567890987654321234567",
+          "timestamp": "2026-09-12T20:24:03.367Z",
+          "sender": 1
+        },
+        {
+          "propertyId": "2",
+          "content": "h",
+          "timestamp": "2026-09-13T21:03:07.566Z",
+          "sender": 1
+        }
+      ],
+      "id": 24
+    }
+  ],
+  "properties": [
+    {
+      "id": 1,
+      "title": "Квартира на ул. Пушкина",
+      "description": "Краткое описание объекта...",
+      "owner": "Петр Петров",
+      "price": 50000,
+      "location": "Москва",
+      "propertyType": "Квартира",
+      "roomCount": 1,
+      "images": [
+        "apartment1.jpg",
+        "apartment2.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Крутая квартира на ул. Пушкина",
+      "description": "Краткое описание объекта...",
+      "owner": "Петр Петров",
+      "price": 70000,
+      "location": "Москва",
+      "propertyType": "Квартира",
+      "roomCount": 2,
+      "images": [
+        "apartment1.jpg",
+        "apartment2.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Дом в Подмосковье",
+      "description": "Просторный дом со всеми удобствами",
+      "owner": "Иван Иванов",
+      "price": 80000,
+      "location": "Подмосковье",
+      "propertyType": "Дом",
+      "roomCount": 4,
+      "images": [
+        "house.jpg"
+      ]
+    }
+  ]
+}
