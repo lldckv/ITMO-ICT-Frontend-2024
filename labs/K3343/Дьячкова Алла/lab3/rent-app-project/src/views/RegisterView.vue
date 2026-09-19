@@ -1,7 +1,8 @@
 <template>
+  <main class="container mt-5 d-flex justify-content-center">
   <section class="form-container-register mx-auto">
     <h2 class="text-center">Регистрация</h2>
-    <form @submit.prevent="handleRegister">
+    <form id="registrationForm" @submit.prevent="handleRegister">
       <div class="form-group mt-3">
         <label for="firstName">Имя</label>
         <input v-model="form.firstName" class="form-control" id="firstName" required>
@@ -36,6 +37,7 @@
       </router-link>
     </form>
   </section>
+  </main>
 </template>
 
 <script setup>

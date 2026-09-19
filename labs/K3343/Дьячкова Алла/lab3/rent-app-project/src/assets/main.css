@@ -7,9 +7,101 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.header {
+.theme-toggle {
+    background: none;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    line-height: 1;
+    align-self: flex-center;
+}
+
+body.dark-mode,
+body.dark-mode #messageList {
+    scrollbar-color: #023465 #114e8b;
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode .form-select:focus {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #6c9fff;
+    box-shadow: 0 0 0 0.25rem rgba(187, 211, 255, 0.836);
+}
+
+svg {
+    display: none;
+}
+
+body.dark-mode svg {
+    fill: #d4ddff;
+}
+
+body.dark-mode,
+body.dark-mode #bookingModal .modal-content,
+body.dark-mode #loginModal .modal-content,
+body.dark-mode #editUserInfoModal .modal-content,
+body.dark-mode #changePasswordModal .modal-content,
+body.dark-mode #rentalHistory,
+body.dark-mode #rentalHistory .card-body {
+    background-color: #114e8b;
+    -webkit-text-fill-color: #d4ddff;
+    --bs-card-border-color: #023465;
+    --bs-body-bg: #023465;
+}
+
+body.dark-mode #bookingModal .modal-header,
+body.dark-mode #loginModal .modal-header,
+body.dark-mode #editUserInfoModal .modal-header,
+body.dark-mode #changePasswordModal .modal-header {
+    border: transparent;
+}
+
+header#header.header,
+footer#footer.footer,
+footer#footer,
+header#header,
+div#footer.footer,
+div#header.header,
+footer,
+header,
+.p-3 {
     background-color: #f8f9fa;
     width: 100%;
+}
+
+body.dark-mode header#header.header,
+body.dark-mode footer#footer.footer,
+body.dark-mode header#header,
+body.dark-mode footer#footer,
+body.dark-mode div#header.header,
+body.dark-mode div#header.header,
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode .p-3 {
+    background-color: #023465;
+    -webkit-text-fill-color: #d4ddff;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode #priceRangeSlider,
+body.dark-mode #priceRangeSlider .noUi-handle-lower,
+body.dark-mode #priceRangeSlider .noUi-handle-upper,
+body.dark-mode #searchResults .card-body,
+body.dark-mode #messageText,
+body.dark-mode #messageList .message-sent {
+    background-color: #d4ddff;
+    -webkit-text-fill-color: #023465;
+}
+
+body.dark-mode #messageList .message-received {
+    background-color: #d8c2f2;
+    -webkit-text-fill-color: #023465;
 }
 
 .footer {
@@ -20,16 +112,26 @@ body {
     width: 100%;
 }
 
-.btn-custom-secondary {
-    background-color: white;
-    color: #6c757d;
-    border: 1px solid #6c757d;
+.btn-secondary {
+    --bs-btn-bg: #5bafc5;
+    --bs-btn-border-color: #5bafc5;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.btn-custom-secondary:hover {
-    background-color: #e0e0e0;
-    color: #6c757d;
+.btn-secondary:hover {
+    --bs-btn-bg: #269fbd;
+    --bs-btn-border-color: #0f6479;
+}
+
+body.dark-mode .btn-secondary {
+    background-color: #43688d;
+    color: #b0d0ec;
+    border: 1px solid #25496d;
+}
+
+body.dark-mode .btn-secondary:hover {
+    background-color: #8948ab;
+    color: #c5daec;
 }
 
 .btn-block {
@@ -53,14 +155,26 @@ h1 {
     color: #333;
 }
 
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5 {
+    color: #d4ddff;
+}
+
 .card {
     margin-bottom: 20px;
     border: 1px soild transparent;
 }
 
-.btn-primary {
-    background-color: #007bff;
-    border: none;
+body.dark-mode .btn-primary {
+    background-color: #0072ec;
+    border: 1px solid #035ab7;
+}
+
+body.dark-mode .btn-primary:hover {
+    background-color: #6730ab;
 }
 
 .custom-btn {
@@ -89,6 +203,24 @@ h1 {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+body.dark-mode .custom-btn {
+    background-color: #035ab7;
+}
+
+body.dark-mode .custom-btn:hover {
+    background-color: #6730ab;
+}
+
+body.dark-mode .custom-btn:active {
+    background-color: #5271ec;
+
+}
+
+body.dark-mode .btn-primary#warning {
+    background-color: #b89e18;
+    -webkit-text-fill-color: #023465;
+}
+
 .sidebar {
     max-width: 300px;
     height: 100%;
@@ -110,7 +242,7 @@ h1 {
 }
 
 #messageList {
-    max-height: 400px;
+    max-height: 220px;
     overflow-y: auto;
     row-gap: 12px;
     padding-top: 2px;
@@ -153,6 +285,26 @@ h1 {
     border: 1px transparent;
     border-radius: 5px;
 }
+
+/* body.dark-mode list-group-item message-sent {
+    background-color: #346faa;
+    outline: 1px solid #023465;
+    -webkit-text-fill-color: #d4ddff;
+} */
+
+body.dark-mode message-received {
+    background-color: #4e4ea0;
+    outline: 1px solid #25255b;
+    -webkit-text-fill-color: #d4ddff;
+}
+
+/* body.dark-mode #messageText {
+    background-color: #346faa;
+    outline: 1px solid #023465;
+    border: 1px solid #346faa;
+    -webkit-text-fill-color: #d4ddff;
+
+} */
 
 @media (max-width: 767.98px) {
     .sidebar {
