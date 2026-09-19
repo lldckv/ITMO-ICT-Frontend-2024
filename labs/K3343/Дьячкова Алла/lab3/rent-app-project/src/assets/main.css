@@ -27,14 +27,7 @@ body.dark-mode #messageList {
 
 body.dark-mode .form-control:focus,
 body.dark-mode .form-select:focus {
-    background-color: #2a2a2a;
-    color: #e0e0e0;
-    border-color: #6c9fff;
-    box-shadow: 0 0 0 0.25rem rgba(187, 211, 255, 0.836);
-}
-
-svg {
-    display: none;
+    -webkit-text-fill-color: #6c9fff;
 }
 
 body.dark-mode svg {

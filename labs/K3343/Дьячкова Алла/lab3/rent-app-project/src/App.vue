@@ -1,4 +1,5 @@
 <template>
+  <IconSprite />
   <AppHeader />
   <main class="container mt-5">
     <router-view />
