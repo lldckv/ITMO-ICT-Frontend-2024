@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-light p-3">
+  <header class="p-3">
     <div class="container d-flex justify-content-between align-items-center">
       <h1 class="h4 mb-0">Сервис Аренды Недвижимости</h1>
       <nav>
@@ -9,7 +9,7 @@
           </li>
           <template v-if="!auth.isLoggedIn">
             <li class="nav-item">
-              <router-link class="nav-link" to="/login"><svg height="25" width="25"><use href="/assets.svg#profile"></use></svg>Вход</router-link>
+              <router-link class="nav-link" to="/login"><svg height="25" width="25"><use href="/assets.svg#enter"></use></svg>Вход</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/register"><svg><use href="/assets.svg#profile-reg"></use></svg>Регистрация</router-link>
