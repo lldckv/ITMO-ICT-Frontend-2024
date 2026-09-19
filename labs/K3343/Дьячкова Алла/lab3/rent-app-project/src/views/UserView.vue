@@ -8,7 +8,7 @@
     <p><strong>Дата рождения:</strong> {{ profile.dob }}</p>
     <p><strong>Телефон:</strong> {{ profile.phone }}</p>
     <p><strong>Email:</strong> {{ profile.email }}</p>
-    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editUserInfoModal" @click="loadEditForm">Редактировать информацию</button>
+    <button class="btn btn-secondary" id="warning" data-bs-toggle="modal" data-bs-target="#editUserInfoModal" @click="loadEditForm">Редактировать информацию</button>
     <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#changePasswordModal">Изменить пароль</button>
   </div>
 
