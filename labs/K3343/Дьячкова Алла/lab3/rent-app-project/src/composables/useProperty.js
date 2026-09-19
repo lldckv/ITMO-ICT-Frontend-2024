@@ -34,7 +34,7 @@ export function useProperty(propertyId) {
 
     async function loginInline(email, password) {
         const res = await authApi.login(email, password);
-        auth.login && auth.login; // placeholder no-op to keep lint happy
+        auth.login && auth.login; // placeholder
         return res.data;
     }
 

@@ -1,6 +1,6 @@
 <template>
   <h1 class="text-center">История сообщений</h1>
-  <div class="mt-4 list-group gap-2 border-0" style="max-height: 400px; overflow-y: auto;" ref="listEl">
+  <div class="mt-4 list-group gap-2 border-0" id="messageList" style="max-height: 400px; overflow-y: auto;" ref="listEl">
     <p v-if="messages.length === 0">Нет сообщений по этому объекту.</p>
     <div
       v-for="(msg, i) in messages"
